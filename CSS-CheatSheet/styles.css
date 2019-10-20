@@ -1,0 +1,240 @@
+/* *{
+    margin: 0;
+    padding: 0;
+}         Resetting*/
+
+
+/* h2{
+    background-color: yellow;
+} */
+
+body{
+    background-color: #f4f4f4;
+    /* background-color: yellowgreen; */
+    color: #555555;
+
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+
+    /* Short-hand method */
+    /* font: 18px Arial,Helvetica,sans-serif; */
+
+    line-height: 1.6em;
+    /* line-height: 100px; */
+    margin: 0;
+}
+
+.container{
+    width: 85%;
+    margin: auto;
+}
+
+.button{
+    background-color: #333;     /* dark grey */
+    color: #fff; 
+    /* white */
+    padding: 10px 15px;
+    border: none;
+}
+.button:hover{
+    color: #fff;
+    background:red;
+
+}
+
+.clr{
+    clear: both;
+    /* For clearing any floats */
+}
+
+.box-1{
+    background-color: #333;
+    color: #fff;
+
+    border-top: 5px red solid;
+    border-right: 5px red solid;
+    border-left: 5px red solid;
+    border-bottom: 5px red solid;
+
+    /* Short-hand method */
+    /* border: 5px red solid; */
+
+    /* targetting specific properties of specific elements */
+    border-width: 2px;
+    border-bottom-width: 10px;
+    border-top-style: dotted;
+
+
+    /* padding-top: 20px;
+    padding-left: 30px;
+    padding-top: 25px;
+    padding-right: 25%; */
+
+    /* If all values are same */
+    padding: 20px;
+
+    margin-top: 20px;
+    margin: 20px,0; 
+    /* Putting the left and right margins to 0 */
+
+}
+
+a{
+    text-decoration: none;  
+    /* Getting rid of the underline sign */
+    color: #000;
+}
+a:hover{
+    color: red;
+    /* Color changes when hovering */
+}
+a:active{
+    color: green;
+    /* When clicked, try pressing it */
+}
+
+/* a:visited{
+    color: yellow
+} */
+
+.box-1 h1{
+    font-family: Tahoma;
+    font-weight: 80;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    word-spacing: 1em;
+}
+
+/* .box-1:hover{
+    background-color: green;
+    color: magenta
+} */
+
+.box-2{
+    border: 10px dotted ;
+    padding: 20px;
+    margin: 20px, 0;
+}
+
+.categories{
+    border: 5px #cccccc solid;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 35px;
+}
+
+.categories h2{
+    text-align: center;
+}
+
+
+.categories ul{
+    padding: 0;
+    padding-left: 20px;
+    list-style: square;
+    list-style: none;
+}
+
+.categories li{
+    padding-left: 10px;
+    border-bottom: dotted 1px #333;
+    list-style-image: url('../Images/check_mark.png')
+    
+}
+
+.my-form{
+    padding: 20px;
+}
+
+.my-form .form-group{
+    padding-bottom: 15px;
+}
+
+.my-form label{
+    display: block;
+}
+.my-form input[type='text'], .my-form textarea{
+    padding: 8px;
+    width: 75%;;
+}
+
+.block{
+    float: left;
+    width: 30%;
+    border:1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+#main-block{
+    float: left;
+    width: 70%;
+    padding: 15px;
+    box-sizing: border-box;
+    /* To ensure that it just does not take up more space
+    than the 70% value when it gets an additional 15px padding */
+}
+
+#side-bar{
+    float: right;
+    width: 30%;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.p-box{
+    width: 800px;
+    height: 500px; 
+    border: 1px solid #000;
+    margin-top: 30px;
+    position: relative;
+    background-image: url('../Images/bg.jpeg');
+    background-repeat: no-repeat;
+    /* background-position: 100px 200px; */
+    background-position: center center;
+    /* Try using percentages center tags or pixels */
+
+}
+
+.p-box h1{
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+
+.p-box h2{
+    position: absolute;
+    bottom: 200px;
+    right: 40px;
+}
+
+.fix-me{
+    position:fixed;
+    top: 400px;
+    /* Whoa!! */
+    /* 400px from the browser top */
+}
+
+
+/* Using pseudo classes to target objects of the same type */
+.my-list li:first-child{
+    background: yellowgreen;
+}
+
+.my-list li:last-child{
+    background: lightblue;
+}
+
+.my-list li:nth-child(7){
+    background: lightpink;
+}
+
+.my-list li:nth-child(even){
+    background: lightgrey;
+}
